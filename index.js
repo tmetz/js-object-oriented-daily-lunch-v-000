@@ -94,7 +94,7 @@ class Meal {
   static byPrice() {
     //A class method that orders all meal instances by their price in descending order.
     return store.meals.sort(function(a, b) {
-      return a - b
+      return a.price - b.price
     });
   }
 
