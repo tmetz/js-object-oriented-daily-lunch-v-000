@@ -71,7 +71,7 @@ class Meal {
   constructor(title, price) {
     this.title = title;
     this.id = ++mealId;
-    this.price = price;
+    this.price = Number(price);
     store.meals.push(this);
   }
 
